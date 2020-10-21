@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CaptureImage</title>
+  </head>
+  <body>
+
+    {% if msg %}
+    <h1>{{ msg }}</h1>
+    {% endif %}
+    
+    
+    <h1>Result:</h1>
+    {% if img_src %}
+      <img src="saved_img.jpg">
+    {% endif %}
+    
+    {% if extracted_text %}
+      <p> The extracted text from the image above is: <b> {{ extracted_text }} </b></p>
+    
+    {% else %}
+      The extracted text will be displayed here
+    {% endif %}
+  </body>
+</html>
+    
